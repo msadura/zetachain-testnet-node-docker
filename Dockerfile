@@ -10,7 +10,6 @@ RUN echo "fs.file-max=262144" >>  /etc/sysctl.conf
 # Read here why UID 10001: https://github.com/hexops/dockerfile/blob/main/README.md#do-not-use-a-uid-below-10000
 ARG UID=10001
 ARG USER_NAME=zetachain
-ARG NODE_NAME=epicode
 
 ENV ZETA_HOME=/home/${USER_NAME}
 
